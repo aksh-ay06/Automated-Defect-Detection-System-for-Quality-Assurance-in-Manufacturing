@@ -110,7 +110,8 @@ The project addresses a critical issue in the CP-Lab manufacturing process: the 
 ## Contributors
 
 - [Akshay Patel] - Industrial Engineer & Machine Learning Enthusiast
-- Interns and team members for data collection and preprocessing
+- Sagar Pranthi
+- Astik Sharma
 
 ---
 
