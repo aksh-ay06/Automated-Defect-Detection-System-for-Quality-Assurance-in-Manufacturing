@@ -77,7 +77,7 @@ def build_loaders(data_dir: Path = DATA_DIR):
     class_counts = np.bincount(train_labels.astype(int))
     weights = 1.0 / class_counts
     sample_weights = [weights[int(l)] for l in train_labels]
-    sampler = WeightedRandomSampler(sample_weights, num_samples=len(sample_weights), replacement=True)
+    sampler = WeightedRandomSampler(sample_weights, num_samples=len(sample_weights) * 4, replacement=True)
 
     train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, sampler=sampler, num_workers=NUM_WORKERS)
     val_loader = DataLoader(val_ds, batch_size=BATCH_SIZE, shuffle=False, num_workers=NUM_WORKERS)

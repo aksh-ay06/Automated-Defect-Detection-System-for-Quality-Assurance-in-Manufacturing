@@ -8,6 +8,8 @@ def build_classifier(num_classes: int = 1, freeze_backbone: bool = True) -> nn.M
     if freeze_backbone:
         for param in model.parameters():
             param.requires_grad = False
+        for param in model.layer4.parameters():
+            param.requires_grad = True
     in_features = model.fc.in_features
     model.fc = nn.Sequential(
         nn.Dropout(p=0.3),
