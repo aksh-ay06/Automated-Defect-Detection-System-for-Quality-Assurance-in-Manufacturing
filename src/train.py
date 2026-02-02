@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import numpy as np
-from pathlib import Path
 
 from src.config import (
     NUM_EPOCHS, LEARNING_RATE, EARLY_STOP_PATIENCE,
