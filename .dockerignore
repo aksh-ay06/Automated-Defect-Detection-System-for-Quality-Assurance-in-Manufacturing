@@ -1,0 +1,11 @@
+__pycache__
+*.pyc
+.git
+.gitignore
+Classroom Project
+logs
+runs
+*.pkl
+.env
+.venv
+venv
