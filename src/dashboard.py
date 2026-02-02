@@ -1,9 +1,10 @@
+import os
 import streamlit as st
 import requests
 from PIL import Image
 import io
 
-API_URL = "http://api:8000"
+API_URL = os.environ.get("API_URL", "http://localhost:8000")
 
 st.set_page_config(page_title="Manufacturing QA Inspector", layout="centered")
 st.title("Manufacturing Defect Inspector")
